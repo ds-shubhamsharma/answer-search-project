@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-const HttpServer = require('../browser/server');
-const { AxePuppeteer } = require('@axe-core/puppeteer');
-const PageOperator = require('../browser/pageoperator');
-const puppeteer = require('puppeteer');
-const TestRunner = require('../browser/testrunner');
-const tests = require('./tests');
+const HttpServer = require("../browser/server");
+const { AxePuppeteer } = require("@axe-core/puppeteer");
+const PageOperator = require("../browser/pageoperator");
+const puppeteer = require("puppeteer");
+const TestRunner = require("../browser/testrunner");
+const tests = require("./tests");
 const PORT = 3033;
 
 /**
@@ -19,20 +19,20 @@ const PORT = 3033;
 const config = {
   reporter: "no-passes",
   runOnly: {
-    type: 'tag',
-    values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag2aaa'],
-  }
-}
+    type: "tag",
+    values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag2aaa"],
+  },
+};
 
 async function wcagTester() {
   const server = new HttpServer({
-    dir: 'build',
-    port: PORT
+    dir: "build",
+    port: PORT,
   });
   server.start();
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  
+
   const pageOperator = new PageOperator(page, `http://localhost:${PORT}`);
   const analyzer = new AxePuppeteer(page).options(config);
 
@@ -51,7 +51,7 @@ async function wcagTester() {
   }
 
   const failedResults = [];
-  results.forEach(result => {
+  results.forEach((result) => {
     const { url, violations } = result;
     if (violations && violations.length > 0) {
       failedResults.push({ url, violations });
@@ -66,6 +66,6 @@ async function wcagTester() {
     console.log(JSON.stringify(failedResults, null, 2));
     process.exit(1);
   }
-};
+}
 
 wcagTester();

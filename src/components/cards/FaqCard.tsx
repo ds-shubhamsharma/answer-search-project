@@ -109,7 +109,6 @@ export function FaqCard(props: TrainerCardProps): JSX.Element {
     //     </AccordionItem>
     // </Accordion>
 
-
     <Accordiean
       que={renderName(trainer.name)}
       answer={renderName(trainer.answer)}

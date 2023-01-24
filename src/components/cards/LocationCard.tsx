@@ -172,7 +172,7 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
 
   const clearHoveredLocation = () =>
     dispatch({ type: LocationActionTypes.ClearHoveredLocation, payload: {} });
-// console.log('location', location)
+  // console.log('location', location)
   return (
     <div
       id={"result-" + location.id}
@@ -225,10 +225,13 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
       <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">
         View Packages
       </a> */}
-      <a className={cssClasses.ctaButton} href="https://www.google.com/maps/contrib/110769251667779408673">
+      <a
+        className={cssClasses.ctaButton}
+        href="https://www.google.com/maps/contrib/110769251667779408673"
+      >
         Get Diretion
       </a>
-       {/* <button className="card-button">
+      {/* <button className="card-button">
                 <Link className="card__link" to={location.id}>
                   {"Get Details"}
                   <i className="fas fa-arrow-right" />

@@ -4,7 +4,6 @@ import { ResponsiveContext } from "../../App";
 import { useComposedCssClasses } from "../../hooks/useComposedCssClasses";
 import { CardProps } from "../../models/cardComponent";
 
-import CardList from "../CardList";
 import MenuItemcard from "../MenuItemCard";
 
 //prettier-ignore
@@ -42,7 +41,7 @@ export interface TrainerData {
   name?: string,
   description?:any,
   c_inspirationalQuote?: string,
-  photoGallery?: any
+  photoGallery?: any,
 }
 
 //prettier-ignore
@@ -93,19 +92,16 @@ export function MenuCard(props: TrainerCardProps): JSX.Element {
     );
   });
 
-
   return (
     <>
-    <div  className="flex flex-wrap gap-y-2">
-      <MenuItemcard
-        name={trainer.name}
-        description={trainer?.description}
-        image={imge}
-        price={""}
-      />
-
-</div>
-      
+      <div className="flex flex-wrap gap-y-2">
+        <MenuItemcard
+          name={trainer.name}
+          description={trainer?.description}
+          image={imge}
+          price={""}
+        />
+      </div>
     </>
 
     // <Accordion allowZeroExpanded>

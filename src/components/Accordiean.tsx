@@ -10,7 +10,7 @@ function Accordiean({que,answer}:data) {
       <div>
         <div className="container mx-auto">
           <div className="m-8 rounded overflow-hidden">
-            {/* accordion-tab  */}
+
             <div className="group outline-none accordion-section" tabIndex={1}>
               <div className="group bg-gray-900 flex justify-between px-4 py-3 items-center text-gray-500 transition ease duration-500 cursor-pointer pr-10 relative">
                 <div className="group-focus:text-white transition ease duration-500">
@@ -26,18 +26,8 @@ function Accordiean({que,answer}:data) {
                 </p>
               </div>
             </div>
-            {/* accordion-tab */}
-            {/* accordion-tab  */}
-         
-            {/* accordion-tab */}
-            {/* accordion-tab  */}
           
-            {/* accordion-tab */}
           </div>
-        </div>
-        <div className="w-full fixed bottom-0 text-center bg-red-700 py-4 text-white">
-          Pure CSS Accordion Built using TailwindCSS. CSS is generated using the
-          built tool by making tweaks to the <strong>tailwind.config.js</strong>
         </div>
       </div>
     </div>
