@@ -93,7 +93,7 @@ export function MenuCard(props: TrainerCardProps): JSX.Element {
 
   return (
     <>
-      <div style={{display:"flex"}}>
+      <div>
         <MenuItemcard
           name={trainer.name}
           description={trainer?.description}

@@ -1,6 +1,7 @@
 import * as React from "react";
 import AlternativeVerticals from "../components/AlternativeVerticals";
 import { MenuCard } from "../components/cards/MenuCard";
+import Footer from "../components/Footer";
 import VerticalResults from "../components/VerticalResults";
 import usePageSetupEffect from "../hooks/usePageSetupEffect";
 
@@ -31,6 +32,7 @@ const MenuItem = ({ verticalKey }: { verticalKey: string }) => {
         ]}
       />
       <VerticalResults CardComponent={MenuCard} />
+      <Footer/>
     </>
   );
 };
