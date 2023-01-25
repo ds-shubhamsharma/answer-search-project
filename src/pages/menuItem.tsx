@@ -21,7 +21,7 @@ const MenuItem = ({ verticalKey }: { verticalKey: string }) => {
   }, []);
 
   return (
-    <div>
+    <>
       <AlternativeVerticals
         currentVerticalLabel="FAQs"
         verticalsConfig={[
@@ -31,7 +31,7 @@ const MenuItem = ({ verticalKey }: { verticalKey: string }) => {
         ]}
       />
       <VerticalResults CardComponent={MenuCard} />
-    </div>
+    </>
   );
 };
 

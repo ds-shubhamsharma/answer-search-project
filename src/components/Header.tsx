@@ -13,15 +13,15 @@ const links: Link[] = [
   {
     label: "About",
     url: "#",
-  },    
+  },
   {
     label: "Faq",
     url: "#",
-  }, 
+  },
   {
     label: "location",
     url: "#",
-  }, 
+  },
 ];
 
 const Header = () => {
@@ -34,29 +34,23 @@ const Header = () => {
   ));
 
   return (
-    <div className="" style={{backgroundColor:"#24262b"}}>
+    <div style={{ backgroundColor: "#24262b" }}>
       <div className="centered-container">
         <nav className="py-6 flex items-center justify-between">
           <div className="flex gap-x-4 items-center">
-          <div className="pl-40">
-          <img
-            src=""
-            width="full"
-            height="50"></img> </div>
-            <div className="flex gap-x-4 text-sm font-semibold text-body" style={{color:"white",fontSize:"17px"}}>
+            <div className="pl-40">
+              <img src="" width="full" height="50"></img>{" "}
+            </div>
+            <div
+              className="flex gap-x-4 text-sm font-semibold text-body"
+              style={{ color: "white", fontSize: "17px" }}
+            >
               {linkDoms}
             </div>
           </div>
-          <div className="space-x-5"></div>
+          <div className="space-x-5"></div> 
           <div className="flex gap-x-4">
-            <div className=" h-12 pt-4 ">
-              {/* <Cta
-                buttonText="Order Online"
-                url="#"
-                style="text-white bg-orange shadow-xl"
-              ></Cta> */}
-              
-            </div>
+            <div className=" h-12 pt-4 "></div>
           </div>
         </nav>
       </div>

@@ -94,7 +94,7 @@ export function MenuCard(props: TrainerCardProps): JSX.Element {
 
   return (
     <>
-      <div className="flex flex-wrap gap-y-2">
+      <div style={{display:"flex"}}>
         <MenuItemcard
           name={trainer.name}
           description={trainer?.description}

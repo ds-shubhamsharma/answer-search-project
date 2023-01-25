@@ -225,12 +225,29 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
       <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">
         View Packages
       </a> */}
-      <a
-        className={cssClasses.ctaButton}
-        href="https://www.google.com/maps/contrib/110769251667779408673"
-      >
-        Get Diretion
-      </a>
+      <div className="flex gap-6">
+        <button className="bg-gray-900  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          {" "}
+          <a href="https://www.google.com/maps/contrib/110769251667779408673">
+            Get Diretion
+          </a>
+        </button>
+
+        {/* <button className="bg-gray-900  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          {" "}
+          <a href="https://www.google.com/maps/contrib/110769251667779408673">
+            Details
+          </a>
+        </button>
+
+        <button className="bg-gray-900  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          {" "}
+          <a href="https://www.google.com/maps/contrib/110769251667779408673">
+            Get check
+          </a>
+        </button> */}
+      </div>
+
       {/* <button className="card-button">
                 <Link className="card__link" to={location.id}>
                   {"Get Details"}

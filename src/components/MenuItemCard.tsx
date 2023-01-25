@@ -27,6 +27,6 @@ const MenuItemcard = ({ name, image, description }: Props) => {
       </div>
     </>
   );
-}
+};
 
 export default MenuItemcard;
