@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { ResponsiveContext } from "../../App";
 import { useComposedCssClasses } from "../../hooks/useComposedCssClasses";
 import { CardProps } from "../../models/cardComponent";
-
 import MenuItemcard from "../MenuItemCard";
 
 //prettier-ignore
@@ -104,20 +103,5 @@ export function MenuCard(props: TrainerCardProps): JSX.Element {
       </div>
     </>
 
-    // <Accordion allowZeroExpanded>
-    //   <AccordionItem key={trainer.id}>
-    //     <AccordionItemHeading>
-    //       <AccordionItemButton>
-    //         <div className="text-red-600">{renderName(trainer.name)}</div>
-    //       </AccordionItemButton>
-    //     </AccordionItemHeading>
-    //     <AccordionItemPanel>
-    //       <div>
-    //         {renderName(trainer.answer)}
-    //         <div className={cssClasses.ctaButtonText}>Read more</div>
-    //       </div>
-    //     </AccordionItemPanel>
-    //   </AccordionItem>
-    // </Accordion>
   );
 }

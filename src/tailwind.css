@@ -5,3 +5,5 @@
 .hoverlist:hover{
     background-color: #F1C553;
 }
+
+nav + div {display: flex;}

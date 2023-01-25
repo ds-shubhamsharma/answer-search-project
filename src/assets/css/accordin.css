@@ -446,8 +446,9 @@ video {
 .w-8 {
   width: 2rem;
 }
-.w-full {
-  width: 100%;
+.c-full {
+  width: 60%;
+  margin-left: 15%;
 }
 .transform {
   --transform-translate-x: 0;
